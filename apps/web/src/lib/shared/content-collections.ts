@@ -4,6 +4,7 @@ import * as Schema from "effect/Schema";
 const Skill = Schema.Struct({
 	name: Schema.String,
 	slug: Schema.String,
+	oneliner: Schema.String,
 	description: Schema.String,
 	category: Schema.String,
 	themeColor: Schema.String,

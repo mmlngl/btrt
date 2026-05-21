@@ -3,6 +3,8 @@ import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
 import appCss from "../styles.css?url";
+import { Masthead } from "~lib/widgets/masthead";
+import { Footer } from "~lib/widgets/footer";
 
 export const Route = createRootRoute({
 	head: () => ({
@@ -34,8 +36,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			<head>
 				<HeadContent />
 			</head>
-			<body>
+			<body className="p-8">
+				<Masthead className="mb-8" />
 				{children}
+				<Footer />
 				<TanStackDevtools
 					config={{
 						position: "bottom-right",

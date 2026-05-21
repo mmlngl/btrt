@@ -15,7 +15,7 @@ export const Route = createFileRoute("/skill/$slug")({
 function SkillDetail() {
 	const { skill } = Route.useLoaderData();
 	return (
-		<div className="p-8">
+		<div>
 			<SkillEntity skill={skill}>
 				<SkillCanvas className="h-40" />
 				<SkillHeader />
