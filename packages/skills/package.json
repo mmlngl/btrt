@@ -1,0 +1,13 @@
+{
+  "name": "@btrt/skills",
+  "version": "1.0.0",
+  "description": "A Collection of Skills ",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "Skills"
+  ],
+  "author": "Michele Memoli <michele.memoli@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0"
+}

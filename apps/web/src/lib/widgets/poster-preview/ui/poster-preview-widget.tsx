@@ -3,19 +3,17 @@ import { WebglCanvas } from "@btrt/ui/components/webgl-canvas";
 import { WebglStaticCanvas } from "@btrt/ui/components/webgl-static-canvas";
 import { Link } from "@tanstack/react-router";
 import { type FC, useState } from "react";
-import * as Entity from "~entities/poster";
+import * as Entity from "~lib/entities/skill";
 
-export interface PosterPreviewWidgetProps {
-	poster: Entity.PosterModel;
+export interface SkillPreviewWidgetProps {
+	poster: Entity.SkillModel;
 }
 
-export const PosterPreviewWidget: FC<PosterPreviewWidgetProps> = ({
-	poster,
-}) => {
+export const SkillPreviewWidget: FC<SkillPreviewWidgetProps> = ({ poster }) => {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
-		<Entity.PosterEntity poster={poster}>
+		<Entity.SkillEntity poster={poster}>
 			<Link
 				to="/p/$slug"
 				params={{ slug: poster.slug }}
@@ -32,6 +30,6 @@ export const PosterPreviewWidget: FC<PosterPreviewWidgetProps> = ({
 				</div>
 				<T.H3>{poster.title}</T.H3>
 			</Link>
-		</Entity.PosterEntity>
+		</Entity.SkillEntity>
 	);
 };

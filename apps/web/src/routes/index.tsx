@@ -1,27 +1,27 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { allPosters } from "content-collections";
+import { allSkills } from "content-collections";
 
 export const Route = createFileRoute("/")({
 	component: PublicHome,
 	loader: () => {
 		return {
-			posters: allPosters,
+			skills: allSkills,
 		};
 	},
 });
 
 function PublicHome() {
-	const { posters } = Route.useLoaderData();
+	const { skills } = Route.useLoaderData();
 	return (
 		<div className="p-8">
 			<Link to="/" className="mb-8 inline-block">
 				Home
 			</Link>
 			<ul>
-				{posters.map((poster) => (
-					<li key={poster.slug}>
-						<Link to="/p/$slug" params={{ slug: poster.slug }}>
-							{poster.title}
+				{skills.map((skill) => (
+					<li key={skill.slug}>
+						<Link to="/skill/$slug" params={{ slug: skill.slug }}>
+							{skill.name}
 						</Link>
 					</li>
 				))}

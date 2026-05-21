@@ -1,26 +1,22 @@
 import type { FC } from "react";
-import * as Entity from "~entities/poster";
-import {
-	PosterContent,
-	PosterHeading,
-	PosterImage,
-} from "~lib/features/poster";
+import * as Entity from "~lib/entities/skill";
+import { SkillContent, SkillHeading, SkillImage } from "~lib/features/skill";
 
-export interface PosterWidgetProps {
-	poster: Entity.PosterModel;
+export interface SkillWidgetProps {
+	poster: Entity.SkillModel;
 }
 
-export const PosterWidget: FC<PosterWidgetProps> = ({ poster }) => {
+export const SkillWidget: FC<SkillWidgetProps> = ({ poster }) => {
 	return (
 		<div className="mx-[5vw] my-[8vw]">
-			<Entity.PosterEntity poster={poster}>
-				<PosterImage />
-				<PosterHeading />
+			<Entity.SkillEntity poster={poster}>
+				<SkillImage />
+				<SkillHeading />
 
 				<div className="container mx-auto max-w-md">
-					<PosterContent />
+					<SkillContent />
 				</div>
-			</Entity.PosterEntity>
+			</Entity.SkillEntity>
 		</div>
 	);
 };

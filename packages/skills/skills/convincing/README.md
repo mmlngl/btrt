@@ -1,5 +1,5 @@
 # Convincing
 
-General workflow tools, not code-specific.
+Tools for convincing and persuading others
 
-- **[make-deck](./make-deck/SKILL.md)** — Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy.
+- **[make-deck](./make-deck/SKILL.md)** — Build persuasive presentation decks with beginning/middle/end structure. Use when user wants to create slides, build a presentation, or craft a pitch deck.

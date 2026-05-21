@@ -1,0 +1,33 @@
+---
+name: make-deck
+slug: make-deck
+category: convincing
+description: Build a persuasive presentation deck with beginning/middle/end structure. Use when user wants to create slides, build a presentation, or craft a pitch deck.
+themeColor: black
+fragmentShader: |
+  precision highp float;
+
+  uniform float uTime;
+  uniform vec2 uResolution;
+
+  void main() {
+    vec2 uv = gl_FragCoord.xy / uResolution;
+    vec3 color = 0.5 + 0.5 * cos(uTime + uv.xyx + vec3(0, 2, 4));
+    gl_FragColor = vec4(color, 1.0);
+  }
+vertexShader: |
+  attribute vec2 uv;
+  attribute vec2 position;
+
+  void main() {
+    gl_Position = vec4(position, 0, 1);
+  }
+---
+
+Stuff and **things** like
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend est nec mi maximus gravida. Maecenas pellentesque tempus tincidunt. Donec mattis ligula mauris, eu imperdiet nulla vestibulum vitae. Morbi sit amet erat luctus est faucibus mollis. Mauris quis odio faucibus, porttitor ipsum et, ornare dui. Fusce erat nisi, luctus et pretium at, egestas vestibulum nibh. Etiam sem arcu, pretium id ante vitae, imperdiet euismod nulla. Quisque accumsan dolor eget dolor tristique venenatis. Integer elementum lectus quis bibendum aliquam. Vivamus dignissim lectus ut tempus tempus. Nam viverra risus ut nisl fringilla commodo. Ut ac purus aliquet, suscipit diam non, dapibus enim. Vestibulum pellentesque vulputate velit, non egestas urna tempor a.
+
+Nullam nec ultricies lectus. Aenean elit ante, lacinia fermentum hendrerit vel, porttitor et mi. Quisque euismod porttitor ex, nec feugiat felis iaculis eget. Cras lacus augue, placerat eget hendrerit vel, blandit nec enim. Quisque mattis fringilla eleifend. Duis dapibus sagittis diam, vitae ultrices tortor congue sit amet. Sed euismod nulla nulla, sit amet pretium lorem tempor in. Sed id maximus leo. Nulla vel placerat arcu. Aliquam ultricies urna blandit, dignissim orci eu, egestas sem. Sed scelerisque accumsan auctor.
+
+Nulla facilisi. In placerat lorem metus, nec gravida diam fringilla ac. Nulla facilisi. Quisque ornare commodo varius. Duis ut fermentum turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam at accumsan arcu. Vivamus convallis ultrices vehicula. Aliquam porttitor odio sapien, in scelerisque ligula convallis eget. Nunc dolor neque, tincidunt non vestibulum sit amet, pellentesque at sapien.

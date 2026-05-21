@@ -1,22 +1,31 @@
-import { P } from "@btrt/ui/components/typography";
+import { T } from "@btrt/ui/components/typography";
 import { Link } from "@tanstack/react-router";
 import type { FC } from "react";
 import { SafeMdxRenderer } from "safe-mdx";
 import { mdxParse } from "safe-mdx/parse";
-import { usePoster } from "~lib/entities/poster";
+import { useSkill } from "~lib/entities/skill";
 
-export const PosterContent: FC = () => {
-	const poster = usePoster();
-	const ast = mdxParse(poster.content);
+export const SkillContent: FC = () => {
+	const skill = useSkill();
+	const ast = mdxParse(skill.content);
 
 	return (
 		<div className="prose">
 			<SafeMdxRenderer
-				markdown={poster.content}
+				markdown={skill.content}
 				mdast={ast}
 				components={{
 					p({ children, ...props }) {
-						return <P {...props}>{children}</P>;
+						return <T.P {...props}>{children}</T.P>;
+					},
+					h1({ children, ...props }) {
+						return <T.H1 {...props}>{children}</T.H1>;
+					},
+					h2({ children, ...props }) {
+						return <T.H2 {...props}>{children}</T.H2>;
+					},
+					h3({ children, ...props }) {
+						return <T.H3 {...props}>{children}</T.H3>;
 					},
 					img: ({ src, alt }) => (
 						<img src={src} alt={alt} loading="lazy" className="shadow-md" />

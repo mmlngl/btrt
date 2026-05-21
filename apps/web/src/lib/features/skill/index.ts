@@ -1,3 +1,3 @@
 export * from "./content";
-export * from "./heading";
+export * from "./header";
 export * from "./canvas";

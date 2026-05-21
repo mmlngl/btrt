@@ -2,10 +2,10 @@ import * as Option from "effect/Option";
 import { useContext } from "react";
 import * as Lib from "../lib";
 
-export const usePoster = () => {
-	const posterOption = useContext(Lib.PosterEntityContext);
+export const useSkill = () => {
+	const posterOption = useContext(Lib.SkillEntityContext);
 	return Option.getOrThrowWith(
 		posterOption,
-		() => new Error("<PosterEntity> Not found"),
+		() => new Error("<SkillEntity> Not found"),
 	);
 };

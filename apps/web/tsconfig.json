@@ -10,7 +10,7 @@
 			"~entities/*": ["./src/lib/entities/*"],
 			"~features/*": ["./src/lib/features/*"],
 			"~widgets/*": ["./src/lib/widgets/*"],
-			"content-collections": ["./.content-collections/generated"]
+			"content-collections": ["./src/lib/shared/.content-collections/generated"]
 		},
 		"lib": ["ES2022", "DOM", "DOM.Iterable"],
 		"types": ["./worker-configuration.d.ts", "vite/client"],
