@@ -1,8 +1,5 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.13/schema.json",
 	"root": false,
-	"extends": [
-		"@studio-albums/biome-config/base",
-		"@studio-albums/biome-config/react-internal"
-	]
+	"extends": ["@btrt/biome-config/base", "@btrt/biome-config/react-internal"]
 }

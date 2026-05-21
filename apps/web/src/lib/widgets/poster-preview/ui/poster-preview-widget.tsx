@@ -1,6 +1,6 @@
-import { T } from "@studio-albums/ui/components/typography";
-import { WebglCanvas } from "@studio-albums/ui/components/webgl-canvas";
-import { WebglStaticCanvas } from "@studio-albums/ui/components/webgl-static-canvas";
+import { T } from "@btrt/ui/components/typography";
+import { WebglCanvas } from "@btrt/ui/components/webgl-canvas";
+import { WebglStaticCanvas } from "@btrt/ui/components/webgl-static-canvas";
 import { Link } from "@tanstack/react-router";
 import { type FC, useState } from "react";
 import * as Entity from "~entities/poster";

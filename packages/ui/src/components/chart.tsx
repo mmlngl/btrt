@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 

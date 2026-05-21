@@ -1,4 +1,4 @@
-import { H1 } from "@studio-albums/ui/components/typography";
+import { H1 } from "@btrt/ui/components/typography";
 import type { FC } from "react";
 import { usePoster } from "~lib/entities/poster";
 

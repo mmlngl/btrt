@@ -17,7 +17,7 @@
 		"exactOptionalPropertyTypes": true,
 		"baseUrl": ".",
 		"paths": {
-			"@studio-albums/ui/*": ["./src/*"]
+			"@btrt/ui/*": ["./src/*"]
 		}
 	},
 	"include": ["."],

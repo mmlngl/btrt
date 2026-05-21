@@ -1,6 +1,11 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { allPosters } from "content-collections";
-import { PosterWidget } from "~lib/widgets/poster";
+import { PosterEntity } from "~lib/entities/poster";
+import {
+	PosterCanvas,
+	PosterContent,
+	PosterHeading,
+} from "~lib/features/poster";
 
 export const Route = createFileRoute("/p/$slug")({
 	component: PosterDetail,
@@ -14,8 +19,12 @@ export const Route = createFileRoute("/p/$slug")({
 function PosterDetail() {
 	const { poster } = Route.useLoaderData();
 	return (
-		<div>
-			<PosterWidget poster={poster} />
+		<div className="p-8">
+			<PosterEntity poster={poster}>
+				<PosterCanvas className="h-100 sm:h-200" />
+				<PosterHeading />
+				<PosterContent />
+			</PosterEntity>
 		</div>
 	);
 }

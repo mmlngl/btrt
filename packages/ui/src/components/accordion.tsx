@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import { ChevronDownIcon } from "lucide-react";
 import { Accordion as AccordionPrimitive } from "radix-ui";
 import * as React from "react";

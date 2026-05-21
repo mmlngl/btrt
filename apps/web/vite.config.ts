@@ -14,7 +14,9 @@ const config = defineConfig({
 		tailwindcss(),
 		tanstackStart(),
 		viteReact(),
-		contentCollections(),
+		contentCollections({
+			configPath: "./src/lib/shared/content-collections.ts",
+		}),
 	],
 });
 

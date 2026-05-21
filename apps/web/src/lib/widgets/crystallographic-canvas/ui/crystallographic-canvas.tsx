@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { useMemo, useEffect, useState } from "react";
 import * as Atoms from "@effect/atom-react";
-import { WebglCanvas } from "@studio-albums/ui/components/webgl-canvas";
-import * as Core from "@studio-albums/core/domain";
+import { WebglCanvas } from "@btrt/ui/components/webgl-canvas";
+import * as Core from "@btrt/core/domain";
 import * as Effect from "effect/Effect";
 import * as Schema from "effect/Schema";
 

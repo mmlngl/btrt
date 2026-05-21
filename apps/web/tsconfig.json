@@ -6,7 +6,7 @@
 		"module": "ESNext",
 		"paths": {
 			"~lib/*": ["./src/lib/*"],
-			"~services/*": ["./src/lib/services/*"],
+			"~shared/*": ["./src/lib/shared/*"],
 			"~entities/*": ["./src/lib/entities/*"],
 			"~features/*": ["./src/lib/features/*"],
 			"~widgets/*": ["./src/lib/widgets/*"],

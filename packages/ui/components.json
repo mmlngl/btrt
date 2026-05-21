@@ -11,10 +11,10 @@
 	},
 	"iconLibrary": "lucide",
 	"aliases": {
-		"components": "@studio-albums/ui/components",
-		"utils": "@studio-albums/ui/lib/utils",
-		"hooks": "@studio-albums/ui/hooks",
-		"lib": "@studio-albums/ui/lib",
-		"ui": "@studio-albums/ui/components"
+		"components": "@btrt/ui/components",
+		"utils": "@btrt/ui/lib/utils",
+		"hooks": "@btrt/ui/hooks",
+		"lib": "@btrt/ui/lib",
+		"ui": "@btrt/ui/components"
 	}
 }

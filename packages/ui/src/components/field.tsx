@@ -1,9 +1,9 @@
 "use client";
 
-import { Label } from "@studio-albums/ui/components/label";
-import { Separator } from "@studio-albums/ui/components/separator";
+import { Label } from "@btrt/ui/components/label";
+import { Separator } from "@btrt/ui/components/separator";
 
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { useMemo } from "react";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import { Separator as SeparatorPrimitive } from "radix-ui";
 import * as React from "react";
 

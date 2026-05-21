@@ -17,7 +17,7 @@ export class PosterRepo extends Context.Service<PosterRepo, PosterRepoTrait>()(
 		PosterRepo.of({
 			all: Effect.fn("PosterRepo.all")(function* () {
 				const sortedPosts = allPosters.sort(
-					(a, b) => b.publishedOn.getTime() - a.publishedOn.getTime(),
+					(a, b) => b.date.getTime() - a.date.getTime(),
 				);
 				return yield* Effect.succeed(sortedPosts);
 			}),

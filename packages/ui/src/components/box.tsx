@@ -1,4 +1,4 @@
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import type { FC } from "react";
 
 export const Box: FC<React.ComponentProps<"div">> = ({

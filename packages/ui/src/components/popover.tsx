@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@studio-albums/ui/lib/utils";
+import { cn } from "@btrt/ui/lib/utils";
 import { Popover as PopoverPrimitive } from "radix-ui";
 import * as React from "react";
 

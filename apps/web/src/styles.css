@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@studio-albums/ui/globals.css";
+@import "@btrt/ui/globals.css";
 
 @font-face {
   font-family: 'Space Grotesk Variable';

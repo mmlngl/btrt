@@ -1,25 +1,25 @@
 "use client";
 
 import { Slot } from "@radix-ui/react-slot";
-import { Button } from "@studio-albums/ui/components/button";
-import { Input } from "@studio-albums/ui/components/input";
-import { Separator } from "@studio-albums/ui/components/separator";
+import { Button } from "@btrt/ui/components/button";
+import { Input } from "@btrt/ui/components/input";
+import { Separator } from "@btrt/ui/components/separator";
 import {
 	Sheet,
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
 	SheetTitle,
-} from "@studio-albums/ui/components/sheet";
-import { Skeleton } from "@studio-albums/ui/components/skeleton";
+} from "@btrt/ui/components/sheet";
+import { Skeleton } from "@btrt/ui/components/skeleton";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
-} from "@studio-albums/ui/components/tooltip";
-import { useIsMobile } from "@studio-albums/ui/hooks/use-mobile";
-import { cn } from "@studio-albums/ui/lib/utils";
+} from "@btrt/ui/components/tooltip";
+import { useIsMobile } from "@btrt/ui/hooks/use-mobile";
+import { cn } from "@btrt/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";

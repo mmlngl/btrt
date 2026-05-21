@@ -43,19 +43,19 @@
     "enable": true,
     "custom_scope": false,
     "max_items": 20,
-    "initial_value": "package-core",
+    "initial_value": "skills",
     "options": [
       {
-        "value": "app-web",
-        "label": "app-web"
+        "value": "web",
+        "label": "web"
       },
       {
-        "value": "package-core",
-        "label": "package-core"
+        "value": "skills",
+        "label": "skills"
       },
       {
-        "value": "package-ui",
-        "label": "package-ui"
+        "value": "ui",
+        "label": "ui"
       },
       {
         "value": "",

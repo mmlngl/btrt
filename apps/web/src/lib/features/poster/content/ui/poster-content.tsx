@@ -1,4 +1,4 @@
-import { P } from "@studio-albums/ui/components/typography";
+import { P } from "@btrt/ui/components/typography";
 import { Link } from "@tanstack/react-router";
 import type { FC } from "react";
 import { SafeMdxRenderer } from "safe-mdx";

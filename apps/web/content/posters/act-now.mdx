@@ -1,10 +1,9 @@
 ---
 title: Act Now
 slug: act-now
-publishedOn: 2026-02-27
-isFeatured: true
-themeColor: red
-frag: |
+date: 2026-02-27
+themeColor: black
+fragmentShader: |
   precision highp float;
 
   uniform float uTime;
@@ -15,7 +14,7 @@ frag: |
     vec3 color = 0.5 + 0.5 * cos(uTime + uv.xyx + vec3(0, 2, 4));
     gl_FragColor = vec4(color, 1.0);
   }
-vertex: |
+vertexShader: |
   attribute vec2 uv;
   attribute vec2 position;
 
@@ -23,3 +22,5 @@ vertex: |
     gl_Position = vec4(position, 0, 1);
   }
 ---
+
+Stuff and **things** like
