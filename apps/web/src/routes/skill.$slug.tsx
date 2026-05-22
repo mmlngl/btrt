@@ -17,7 +17,7 @@ function SkillDetail() {
 	return (
 		<div>
 			<SkillEntity skill={skill}>
-				<SkillCanvas className="h-40" />
+				<SkillCanvas className="h-[108px] sm:h-[158px]" />
 				<SkillHeader />
 				<SkillContent />
 			</SkillEntity>

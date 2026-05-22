@@ -10,7 +10,7 @@ export const SkillCanvas: FC<ComponentPropsWithoutRef<"div">> = ({
 	const skill = useSkill();
 	return (
 		<div
-			className={cn("border-2 shadow-2xl", className)}
+			className={cn("border-4", className)}
 			style={{
 				borderColor: skill.themeColor,
 				backgroundColor: skill.themeColor,
