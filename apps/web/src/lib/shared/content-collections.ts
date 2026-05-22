@@ -31,6 +31,15 @@ const Skill = Schema.Struct({
 	content: Schema.String,
 });
 
+const GuidePage = Schema.Struct({
+	title: Schema.String,
+	slug: Schema.String,
+	order: Schema.Number,
+	description: Schema.String,
+	category: Schema.String,
+	content: Schema.String,
+});
+
 const skills = defineCollection({
 	name: "skills",
 	directory: "../../../content/skills",
@@ -39,8 +48,16 @@ const skills = defineCollection({
 	transform: (data) => Schema.encodePromise(Skill)(Skill.make(data)),
 });
 
+const guides = defineCollection({
+	name: "guides",
+	directory: "../../../content/guide",
+	include: "*.mdx",
+	schema: Schema.toStandardSchemaV1(GuidePage),
+	transform: (data) => Schema.encodePromise(GuidePage)(GuidePage.make(data)),
+});
+
 const config = defineConfig({
-	content: [skills],
+	content: [skills, guides],
 });
 
 export default config;

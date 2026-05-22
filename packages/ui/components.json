@@ -11,10 +11,10 @@
 	},
 	"iconLibrary": "lucide",
 	"aliases": {
-		"components": "@btrt/ui/components",
-		"utils": "@btrt/ui/lib/utils",
-		"hooks": "@btrt/ui/hooks",
-		"lib": "@btrt/ui/lib",
-		"ui": "@btrt/ui/components"
+		"components": "@wintr/ui/components",
+		"utils": "@wintr/ui/lib/utils",
+		"hooks": "@wintr/ui/hooks",
+		"lib": "@wintr/ui/lib",
+		"ui": "@wintr/ui/components"
 	}
 }

@@ -1,4 +1,4 @@
-import { cn } from "@btrt/ui/lib/utils";
+import { cn } from "@wintr/ui/lib/utils";
 
 function Skeleton({ className, ...props }: React.ComponentProps<"div">) {
 	return (

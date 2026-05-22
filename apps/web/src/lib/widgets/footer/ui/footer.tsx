@@ -1,4 +1,4 @@
-import { cn } from "@btrt/ui/lib/utils";
+import { cn } from "@wintr/ui/lib/utils";
 import type { ComponentPropsWithoutRef, FC } from "react";
 
 export const Footer: FC<ComponentPropsWithoutRef<"div">> = ({

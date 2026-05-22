@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@btrt/ui/components/button";
-import { cn } from "@btrt/ui/lib/utils";
+import { Button } from "@wintr/ui/components/button";
+import { cn } from "@wintr/ui/lib/utils";
 import { XIcon } from "lucide-react";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import * as React from "react";

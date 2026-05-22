@@ -1,5 +1,5 @@
-import { T } from "@btrt/ui/components/typography";
-import { cn } from "@btrt/ui/lib/utils";
+import { T } from "@wintr/ui/components/typography";
+import { cn } from "@wintr/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import type { ComponentPropsWithoutRef, FC } from "react";
 import type { SkillModel } from "~lib/entities/skill";

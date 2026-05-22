@@ -1,25 +1,25 @@
 "use client";
 
 import { Slot } from "@radix-ui/react-slot";
-import { Button } from "@btrt/ui/components/button";
-import { Input } from "@btrt/ui/components/input";
-import { Separator } from "@btrt/ui/components/separator";
+import { Button } from "@wintr/ui/components/button";
+import { Input } from "@wintr/ui/components/input";
+import { Separator } from "@wintr/ui/components/separator";
 import {
 	Sheet,
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
 	SheetTitle,
-} from "@btrt/ui/components/sheet";
-import { Skeleton } from "@btrt/ui/components/skeleton";
+} from "@wintr/ui/components/sheet";
+import { Skeleton } from "@wintr/ui/components/skeleton";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
-} from "@btrt/ui/components/tooltip";
-import { useIsMobile } from "@btrt/ui/hooks/use-mobile";
-import { cn } from "@btrt/ui/lib/utils";
+} from "@wintr/ui/components/tooltip";
+import { useIsMobile } from "@wintr/ui/hooks/use-mobile";
+import { cn } from "@wintr/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";
@@ -150,6 +150,12 @@ function SidebarProvider({
 	);
 }
 
+export type SidebarProps = React.ComponentProps<"div"> & {
+	side?: "left" | "right";
+	variant?: "sidebar" | "floating" | "inset";
+	collapsible?: "offcanvas" | "icon" | "none";
+};
+
 function Sidebar({
 	side = "left",
 	variant = "sidebar",
@@ -157,11 +163,7 @@ function Sidebar({
 	className,
 	children,
 	...props
-}: React.ComponentProps<"div"> & {
-	side?: "left" | "right";
-	variant?: "sidebar" | "floating" | "inset";
-	collapsible?: "offcanvas" | "icon" | "none";
-}) {
+}: SidebarProps) {
 	const { isMobile, state, openMobile, setOpenMobile } = useSidebar();
 
 	if (collapsible === "none") {

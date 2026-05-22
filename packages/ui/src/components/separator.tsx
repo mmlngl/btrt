@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@btrt/ui/lib/utils";
+import { cn } from "@wintr/ui/lib/utils";
 import { Separator as SeparatorPrimitive } from "radix-ui";
 import * as React from "react";
 

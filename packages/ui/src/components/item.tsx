@@ -1,5 +1,5 @@
-import { Separator } from "@btrt/ui/components/separator";
-import { cn } from "@btrt/ui/lib/utils";
+import { Separator } from "@wintr/ui/components/separator";
+import { cn } from "@wintr/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 import * as React from "react";

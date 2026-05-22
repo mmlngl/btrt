@@ -1,10 +1,10 @@
-# BTRT
+# WINTR
 
-BTRT ("Build the Right Thing") is my collection of advice, guidance and tools for Product Success.
+WINTR ("WIN through reasoning") is my collection of advice, guidance and tools for Product Success.
 
 Coming from a strong UX and Product Design background, I've designed apps for startups and internal tools for Enterprise.
 
-But BTRT is more than a Product Design framework I've also run my own startup so it'll cover Business Advice – Proposition Refinement, Feasbility, Research.
+But WINTR is more than a Product Design framework I've also run my own startup so it'll cover Business Advice – Proposition Refinement, Feasbility, Research.
 
 Finally, I'm also a full-time dev (Typescript + Effect.ts) so I include patterns for Software design too.
 

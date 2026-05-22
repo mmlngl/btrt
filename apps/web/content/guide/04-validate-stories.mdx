@@ -1,0 +1,102 @@
+---
+title: validate-stories
+slug: validate-stories
+order: 4
+description: Validate specs before development, enforce acceptance criteria, and monitor delivery risks.
+category: skills
+---
+
+# validate-stories
+
+Validate specs before development. Check acceptance criteria quality, test coverage, and flag delivery risks.
+
+## When to Use
+
+- Before a story moves to "In Progress"
+- During sprint reviews
+- Before PR merges
+- When delivery feels off-track
+
+## The Three Checks
+
+### 1. Story Quality
+
+A good story has:
+
+- **Acceptance criteria (AC)** — What "done" looks like
+- **Testable AC** — Not "works fine" or "looks good"
+- **No ambiguity** — No "should", "maybe", "or", "etc."
+- **BDD format preferred** — Given/When/Then
+
+### 2. Test Coverage
+
+Before a PR merges:
+
+- New logic has unit tests
+- Coverage doesn't drop below threshold
+- Integration tests for critical paths
+
+### 3. Delivery Risk
+
+Watch for:
+
+- Story points growing mid-sprint (scope creep)
+- AC added after work started
+- High defect rate on similar stories
+- Stories stuck in "In Progress"
+
+## Workflow States
+
+| State | Assess | Remind | Block |
+|-------|--------|--------|-------|
+| Spec drafting | ✅ | — | — |
+| Ready for dev | ✅ | ✅ | TBD |
+| In progress | ✅ | — | — |
+| PR ready | ✅ | ✅ | ✅ |
+| Merged | ✅ | — | — |
+
+## The Assessment Report
+
+```
+## Story Assessment: [ID]
+
+### Quality Score: X/Y criteria met
+
+**Acceptance Criteria:**
+- ✅ [criterion]
+- ❌ [missing/poor criterion]
+
+**Test Coverage:**
+- ✅ [metric]
+- ❌ [below threshold]
+
+**Risks:**
+- ⚠️ [risk description]
+
+**Recommendation:** [Ready / Needs Work / Blocked]
+```
+
+## Example: Poor vs. Good
+
+**Poor:**
+```
+As a user, I want to log in so I can access my account
+AC: User should be able to log in
+```
+
+**Good:**
+```
+As a user, I want to log in so I can access my account
+AC:
+- Given I'm on the login page
+- When I enter valid credentials
+- Then I see the dashboard and am redirected to /dashboard
+- Given I enter invalid credentials
+- Then I see an error message: "Invalid email or password"
+```
+
+## Safe Assumptions
+
+- Stories use some form of task tracking (Linear, Jira, etc.)
+- Git workflow exists (PRs, merges)
+- Test coverage is measured

@@ -1,9 +1,9 @@
 "use client";
 
-import { Label } from "@btrt/ui/components/label";
-import { Separator } from "@btrt/ui/components/separator";
+import { Label } from "@wintr/ui/components/label";
+import { Separator } from "@wintr/ui/components/separator";
 
-import { cn } from "@btrt/ui/lib/utils";
+import { cn } from "@wintr/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { useMemo } from "react";
 

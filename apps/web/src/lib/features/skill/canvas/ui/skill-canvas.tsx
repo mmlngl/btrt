@@ -1,5 +1,5 @@
-import { WebglCanvas } from "@btrt/ui/components/webgl-canvas";
-import { cn } from "@btrt/ui/lib/utils";
+import { WebglCanvas } from "@wintr/ui/components/webgl-canvas";
+import { cn } from "@wintr/ui/lib/utils";
 import type { ComponentPropsWithoutRef, FC } from "react";
 import { useSkill } from "~lib/entities/skill";
 
