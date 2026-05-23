@@ -1,4 +1,4 @@
-# WINTR
+# Lensed Build
 
 WIN Through Reasoning.
 
@@ -39,7 +39,7 @@ The guide delivers both: functional success drives emotional confidence.
 
 ## Architecture: State Machine
 
-WINTR is a state machine. You enter in a starting state and progress through gates.
+Lensed Build is a state machine. You enter in a starting state and progress through gates.
 
 ```
 [START: Idea exists]
@@ -163,7 +163,7 @@ Both share the same fear: wasting effort on something that was never going to wo
 
 ## Product
 
-**Name:** WINTR
+**Name:** Lensed Build
 **Tagline:** WIN Through Reasoning.
 **Price:** £49.83 one-off (launch price TBD)
 
@@ -190,7 +190,7 @@ No high-ticket. No personal involvement from Michele. Entirely passive.
 
 ## StoryBrand Framing
 
-The buyer is the hero. WINTR is the Yoda — the guide, not the star. At every touchpoint, the reader is the hero on a journey from "jumping in blind" to "shipping with confidence."
+The buyer is the hero. Lensed Build is the Yoda — the guide, not the star. At every touchpoint, the reader is the hero on a journey from "jumping in blind" to "shipping with confidence."
 
 ---
 
@@ -209,7 +209,7 @@ Not YC-style advice from one-dimensional experts. Advice from someone who's actu
 
 ### Stub
 
-- `interrogate-dimension` — Core to WINTR. Check each dimension (UX, Business, Code) for completeness.
+- `interrogate-dimension` — Core to Lensed Build. Check each dimension (UX, Business, Code) for completeness.
 - `validate-problem` — Validate that the problem is real before building
 - `define-proposition` — Articulate the proposition clearly for different audiences
 - `stakeholder-alignment` — Align stakeholders before committing

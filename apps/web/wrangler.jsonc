@@ -1,20 +1,20 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "WINTR-web",
+	"name": "lensed-build-web",
 	"compatibility_date": "2025-09-02",
 	"compatibility_flags": ["nodejs_compat"],
 	"main": "./src/server.ts",
 	"services": [
 		{
 			"binding": "API",
-			"service": "WINTR-api",
+			"service": "lensed-build-api",
 			"remote": false
 		}
 	],
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "WINTR-prod",
+			"database_name": "lensed-build-prod",
 			"database_id": "5e69dd0b-86f4-4893-b745-03938b96dbe7",
 			"migrations_dir": "src/lib/services/db/migrations"
 		}

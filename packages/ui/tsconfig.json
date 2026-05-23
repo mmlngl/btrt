@@ -17,7 +17,7 @@
 		"exactOptionalPropertyTypes": true,
 		"baseUrl": ".",
 		"paths": {
-			"@wintr/ui/*": ["./src/*"]
+			"@lensed/ui/*": ["./src/*"]
 		}
 	},
 	"include": ["."],

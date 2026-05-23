@@ -1,4 +1,4 @@
-import { T } from "@wintr/ui/components/typography";
+import { T } from "@lensed/ui/components/typography";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { allSkills, type Skill } from "content-collections";
 import { ContentSection } from "~lib/widgets/content-section";

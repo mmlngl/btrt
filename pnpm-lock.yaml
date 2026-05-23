@@ -34,7 +34,7 @@ importers:
 
   apps/web:
     dependencies:
-      "@wintr/ui":
+      "@lensed/ui":
         specifier: workspace:^
         version: link:../../packages/ui
       "@cloudflare/vite-plugin":
@@ -95,7 +95,7 @@ importers:
         specifier: ^4.1.18
         version: 4.3.0
     devDependencies:
-      "@wintr/biome-config":
+      "@lensed/biome-config":
         specifier: workspace:^
         version: link:../../packages/biome-config
       "@content-collections/mdx":
@@ -210,7 +210,7 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
     devDependencies:
-      "@wintr/biome-config":
+      "@lensed/biome-config":
         specifier: workspace:^
         version: link:../biome-config
       "@tailwindcss/postcss":

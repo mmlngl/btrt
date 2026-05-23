@@ -1,10 +1,10 @@
-# WINTR Guide — Content Arc
+# Lensed Build Guide — Content Arc
 
 _Stub. First draft._
 
 ## Architecture: State Machine
 
-WINTR is a state machine. You enter in a starting state and progress through gates.
+Lensed Build is a state machine. You enter in a starting state and progress through gates.
 
 ```
 [START: Idea exists]
@@ -120,7 +120,7 @@ Interrogation is recursive, not one-shot. You don't "fail" — you loop back to 
 - AI integration at every step — use AI to accelerate, not to bypass thinking
 - The trifecta lens — every decision checked against UX + Business + Code
 - Agent skills available at each phase
-- Buyer is the hero — WINTR is the Yoda
+- Buyer is the hero — Lensed Build is the Yoda
 
 ---
 

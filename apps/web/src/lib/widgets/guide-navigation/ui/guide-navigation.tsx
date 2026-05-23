@@ -6,7 +6,7 @@ import {
 	SidebarGroupLabel,
 	SidebarHeader,
 	type SidebarProps,
-} from "@wintr/ui/components/sidebar";
+} from "@lensed/ui/components/sidebar";
 import type { FC } from "react";
 
 export interface GuideNavigationProps extends SidebarProps {}
@@ -14,11 +14,12 @@ export interface GuideNavigationProps extends SidebarProps {}
 export const GuideNavigation: FC<GuideNavigationProps> = ({
 	side = "right",
 	dir = "rtl",
+	variant = "floating",
 	...props
 }) => {
 	return (
 		<Sidebar dir={dir} side={side} {...props}>
-			<SidebarHeader>WINTR Guide</SidebarHeader>
+			<SidebarHeader>Lensed Build Guide</SidebarHeader>
 			<SidebarContent>
 				<SidebarGroup>
 					<SidebarGroupLabel>Section 1</SidebarGroupLabel>

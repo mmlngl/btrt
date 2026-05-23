@@ -1,5 +1,5 @@
-import { T } from "@wintr/ui/components/typography";
-import { cn } from "@wintr/ui/lib/utils";
+import { T } from "@lensed/ui/components/typography";
+import { cn } from "@lensed/ui/lib/utils";
 import type { ComponentPropsWithoutRef, FC, ReactNode } from "react";
 
 export interface ContentSectionProps

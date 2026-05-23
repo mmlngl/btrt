@@ -1,5 +1,8 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.13/schema.json",
 	"root": false,
-	"extends": ["@wintr/biome-config/base", "@wintr/biome-config/react-internal"]
+	"extends": [
+		"@lensed/biome-config/base",
+		"@lensed/biome-config/react-internal"
+	]
 }

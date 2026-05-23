@@ -1,4 +1,4 @@
-import { cn } from "@wintr/ui/lib/utils";
+import { cn } from "@lensed/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import type { ComponentPropsWithoutRef, FC } from "react";
 import { BuyButton } from "~lib/features/billing/buy-button";
@@ -14,7 +14,7 @@ export const Masthead: FC<ComponentPropsWithoutRef<"div">> = ({
 		>
 			<nav className="flex items-center gap-8">
 				<Link to="/" className="hover:underline font-bold">
-					WINTR
+					Lensed Build
 				</Link>
 
 				<Link

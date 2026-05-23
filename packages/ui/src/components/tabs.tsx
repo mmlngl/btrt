@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@wintr/ui/lib/utils";
+import { cn } from "@lensed/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Tabs as TabsPrimitive } from "radix-ui";
 import * as React from "react";

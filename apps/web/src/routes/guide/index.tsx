@@ -1,4 +1,4 @@
-import { T } from "@wintr/ui/components/typography";
+import { T } from "@lensed/ui/components/typography";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { allGuides } from "content-collections";
 
@@ -17,8 +17,8 @@ function GuideIndex() {
 				</T.H1>
 				<div className="max-w-2xl">
 					<T.Lead>
-						WINTR skills are AI agent workflows. Use them individually or as a
-						framework for building the right thing.
+						Lensed Build skills are AI agent workflows. Use them individually or
+						as a framework for building with the right lenses.
 					</T.Lead>
 				</div>
 			</header>

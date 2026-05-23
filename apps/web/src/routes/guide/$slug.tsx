@@ -1,9 +1,8 @@
-import { T } from "@wintr/ui/components/typography";
+import { T } from "@lensed/ui/components/typography";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { allGuides } from "content-collections";
 import { SafeMdxRenderer } from "safe-mdx";
 import { mdxParse } from "safe-mdx/parse";
-import { GuideSidebar } from "./ui/guide-sidebar";
 
 export const Route = createFileRoute("/guide/$slug")({
 	component: GuidePage,
@@ -19,7 +18,7 @@ function GuidePage() {
 	const ast = mdxParse(page.content);
 
 	return (
-		<GuideSidebar>
+		<>
 			<header className="mb-12">
 				<div className="mb-4">
 					<T.Small className="text-muted-foreground text-sm uppercase tracking-wide">
@@ -62,6 +61,6 @@ function GuidePage() {
 					}}
 				/>
 			</div>
-		</GuideSidebar>
+		</>
 	);
 }

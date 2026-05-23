@@ -1,4 +1,4 @@
-import { T } from "@wintr/ui/components/typography";
+import { T } from "@lensed/ui/components/typography";
 import { Link } from "@tanstack/react-router";
 import type { FC } from "react";
 import { SafeMdxRenderer } from "safe-mdx";

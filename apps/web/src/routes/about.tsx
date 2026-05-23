@@ -1,4 +1,4 @@
-import { T } from "@wintr/ui/components/typography";
+import { T } from "@lensed/ui/components/typography";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/about")({
@@ -25,8 +25,8 @@ function AboutPage() {
 				<div className="flex flex-col gap-4 max-w-xl">
 					<T.P>
 						Most product advice is either theoretical (sounds good, doesn't
-						work) or tactical (here's a template, fill in the blanks). WINTR
-						bridges both.
+						work) or tactical (here's a template, fill in the blanks). Lensed
+						Build bridges both.
 					</T.P>
 					<T.P>
 						After years building apps for startups, running my own company, and
@@ -75,8 +75,8 @@ function AboutPage() {
 				<T.H2 className="font-mono text-2xl mb-6">The Skills</T.H2>
 				<div className="flex flex-col gap-4 max-w-xl">
 					<T.P>
-						WINTR is structured as AI agent skills — reusable workflows that
-						encapsulate my experience into actionable steps.
+						Lensed Build is structured as AI agent skills — reusable workflows
+						that encapsulate my experience into actionable steps.
 					</T.P>
 					<T.P>
 						Each skill handles a specific phase of product development. Use them

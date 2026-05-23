@@ -17,7 +17,7 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Build the Right Thing (WINTR)",
+				title: "Lensed Build — Build with the right lenses",
 			},
 		],
 		links: [

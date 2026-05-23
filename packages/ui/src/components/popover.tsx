@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@wintr/ui/lib/utils";
+import { cn } from "@lensed/ui/lib/utils";
 import { Popover as PopoverPrimitive } from "radix-ui";
 import * as React from "react";
 

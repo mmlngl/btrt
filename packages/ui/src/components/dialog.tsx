@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@wintr/ui/components/button";
-import { cn } from "@wintr/ui/lib/utils";
+import { Button } from "@lensed/ui/components/button";
+import { cn } from "@lensed/ui/lib/utils";
 import { XIcon } from "lucide-react";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import * as React from "react";

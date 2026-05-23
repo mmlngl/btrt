@@ -1,4 +1,4 @@
-import { SidebarProvider, SidebarTrigger } from "@wintr/ui/components/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@lensed/ui/components/sidebar";
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { GuideNavigation } from "~lib/widgets/guide-navigation";
 

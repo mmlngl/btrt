@@ -1,7 +1,7 @@
 import type { ComponentPropsWithoutRef, FC } from "react";
 import type { SkillModel } from "~lib/entities/skill";
 import { SkillListItem } from "./skill-list-item";
-import { cn } from "@wintr/ui/lib/utils";
+import { cn } from "@lensed/ui/lib/utils";
 
 export type SkillListProps = ComponentPropsWithoutRef<"ul"> & {
 	skills: ReadonlyArray<SkillModel>;

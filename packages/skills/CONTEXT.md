@@ -1,5 +1,5 @@
-# WINTR Skills
+# Lensed Build Skills
 
-A collection of agent skills (slash commands and behaviors) loaded by Claude Code. Skills are organized into buckets and consumed by per-repo configuration emitted by `/setup-WINTR-skills`.
+A collection of agent skills (slash commands and behaviors) loaded by Claude Code. Skills are organized into buckets and consumed by per-repo configuration emitted by `/setup-lensed-build-skills`.
 
 ## Language

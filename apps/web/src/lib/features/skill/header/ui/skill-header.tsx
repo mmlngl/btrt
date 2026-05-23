@@ -1,4 +1,4 @@
-import { H1, Lead } from "@wintr/ui/components/typography";
+import { H1, Lead } from "@lensed/ui/components/typography";
 import type { FC } from "react";
 import { useSkill } from "~lib/entities/skill";
 

@@ -1,25 +1,25 @@
 "use client";
 
 import { Slot } from "@radix-ui/react-slot";
-import { Button } from "@wintr/ui/components/button";
-import { Input } from "@wintr/ui/components/input";
-import { Separator } from "@wintr/ui/components/separator";
+import { Button } from "@lensed/ui/components/button";
+import { Input } from "@lensed/ui/components/input";
+import { Separator } from "@lensed/ui/components/separator";
 import {
 	Sheet,
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
 	SheetTitle,
-} from "@wintr/ui/components/sheet";
-import { Skeleton } from "@wintr/ui/components/skeleton";
+} from "@lensed/ui/components/sheet";
+import { Skeleton } from "@lensed/ui/components/skeleton";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
-} from "@wintr/ui/components/tooltip";
-import { useIsMobile } from "@wintr/ui/hooks/use-mobile";
-import { cn } from "@wintr/ui/lib/utils";
+} from "@lensed/ui/components/tooltip";
+import { useIsMobile } from "@lensed/ui/hooks/use-mobile";
+import { cn } from "@lensed/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";

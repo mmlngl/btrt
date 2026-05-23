@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Button, type ButtonProps } from "@wintr/ui/components/button";
+import { Button, type ButtonProps } from "@lensed/ui/components/button";
 
 export const BuyButton: FC<ButtonProps> = ({
 	variant = "outline",
