@@ -59,7 +59,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			</head>
 			<body className="p-8">
 				<Masthead className="mb-8" />
-				{children}
+				<div className="mr-10">{children}</div>
 				<Footer />
 				<TanStackDevtools
 					config={{

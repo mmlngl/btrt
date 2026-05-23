@@ -18,19 +18,19 @@ export const Masthead: FC<ComponentPropsWithoutRef<"div">> = ({
 				</Link>
 
 				<Link
-					to="/skills"
-					className="hover:underline"
-					activeProps={{ className: "text-primary" }}
-				>
-					Skills
-				</Link>
-
-				<Link
 					to="/about"
 					className="hover:underline"
 					activeProps={{ className: "text-primary" }}
 				>
 					About
+				</Link>
+
+				<Link
+					to="/skills"
+					className="hover:underline"
+					activeProps={{ className: "text-primary" }}
+				>
+					Skills
 				</Link>
 
 				<Link

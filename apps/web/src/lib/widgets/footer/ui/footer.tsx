@@ -1,3 +1,4 @@
+import { T } from "@lensed/ui/components/typography";
 import { cn } from "@lensed/ui/lib/utils";
 import type { ComponentPropsWithoutRef, FC } from "react";
 
@@ -7,10 +8,16 @@ export const Footer: FC<ComponentPropsWithoutRef<"div">> = ({
 }) => {
 	return (
 		<div
-			className={cn("flex justify-between items-baseline", className)}
+			className={cn(
+				"fixed right-8 top-1/2 translate-x-1/2 rotate-90 w-[70vh] text-center",
+				className,
+			)}
 			{...props}
 		>
-			{/*footer*/}
+			<T.Small className="text-muted-foreground">
+				Copyright © {new Date().getFullYear()} Michele Memoli. All rights
+				reserved.
+			</T.Small>
 		</div>
 	);
 };

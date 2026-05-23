@@ -12,13 +12,11 @@ import type { FC } from "react";
 export interface GuideNavigationProps extends SidebarProps {}
 
 export const GuideNavigation: FC<GuideNavigationProps> = ({
-	side = "right",
-	dir = "rtl",
 	variant = "floating",
 	...props
 }) => {
 	return (
-		<Sidebar dir={dir} side={side} {...props}>
+		<Sidebar {...props}>
 			<SidebarHeader>Lensed Build Guide</SidebarHeader>
 			<SidebarContent>
 				<SidebarGroup>
