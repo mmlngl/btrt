@@ -7,7 +7,13 @@ description: Pressure-test an idea by checking all three dimensions (customer ex
 
 Pressure-test the user's idea across three dimensions. Ask questions one at a time, wait for a response before continuing. Keep it conversational — use the user's answers to form the next question naturally. You're not reading a script, you're having a dialogue.
 
-After all questions are answered, score each dimension and present the results. If any dimension is INCOMPLETE, the user must close the gap before proceeding.
+After all questions are answered:
+
+1. Score each dimension
+2. Present the results in the output format
+3. Write the results to `docs/interrogations/{codename}-{timestamp}.md` in the user's project
+
+If any dimension is INCOMPLETE, the user must close the gap before proceeding.
 
 </what-to-do>
 
@@ -103,23 +109,52 @@ COMPLETE answers get a score 1-5:
 
 ## Output Format
 
-After all questions are answered, present:
+After all questions are answered, present and write to `docs/interrogations/{codename}-{timestamp}.md`:
 
+```markdown
+# {codename}
+
+**Date:** {timestamp}
+
+## Customer Experience
+
+**Status:** COMPLETE | INCOMPLETE ({score}/5)
+
+**Notes:**
+
+- [notes on what you know]
+- [notes on gaps]
+
+## Business
+
+**Status:** COMPLETE | INCOMPLETE ({score}/5)
+
+**Notes:**
+
+- [notes on what you know]
+- [notes on gaps]
+
+## Code
+
+**Status:** COMPLETE | INCOMPLETE ({score}/5)
+
+**Notes:**
+
+- [notes on what you know]
+- [notes on gaps]
+
+---
+
+## Summary
+
+{summary of dimensions and any gaps}
+
+## Next Steps
+
+{user's plan to close gaps, or "intentionally accepted"}
 ```
-Customer Experience: [COMPLETE | INCOMPLETE] (score /5)
-  - [notes on what you know]
-  - [notes on gaps]
 
-Business: [COMPLETE | INCOMPLETE] (score /5)
-  - [notes on what you know]
-  - [notes on gaps]
-
-Code: [COMPLETE | INCOMPLETE] (score /5)
-  - [notes on what you know]
-  - [notes on gaps]
-```
-
-If any dimension is INCOMPLETE: describe the gap and the user's plan to close it. The burden is on the user to improve or abandon.
+Create the `docs/interrogations/` directory if it doesn't exist. Write the file, then present the results to the user.
 
 ## When to Use
 
